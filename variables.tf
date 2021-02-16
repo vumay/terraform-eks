@@ -15,7 +15,7 @@ variable "k8s_version" {
 
 variable "release_version" {
   type    = string
-  default = "1.18.9-20210112"
+  default = "1.18.9-20210208"
 }
 
 variable "min_node_count" {
@@ -35,7 +35,7 @@ variable "machine_type" {
 
 variable "destroy" {
   type    = bool
-  default = false
+  default = true
 }
 
 
