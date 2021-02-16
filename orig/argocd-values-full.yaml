@@ -1,0 +1,11 @@
+server:
+  ingress:
+    enabled: true
+    hosts:
+    - acme.com
+  extraArgs:
+  - --insecure
+installCRDs: false
+controller:
+  args:
+    appResyncPeriod: 30
