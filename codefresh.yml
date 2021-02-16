@@ -11,14 +11,14 @@ steps:
     revision: "${{CF_BRANCH}}"
     stage: prepare
   init:
-    image: hashicorp/terraform:0.13.0
+    image: hashicorp/terraform:0.14.6
     title: Initializing Terraform
     stage: apply
     commands:
       - terraform init
       - terraform plan
   apply:
-    image: hashicorp/terraform:0.13.0
+    image: hashicorp/terraform:0.14.6
     title: Applying Terraform
     stage: apply
     commands:
