@@ -10,12 +10,12 @@ variable "cluster_name" {
 
 variable "k8s_version" {
   type = string
-  default = "1.18"
+  default = "CHANGE_VERSION"
 }
 
 variable "release_version" {
   type    = string
-  default = "1.18.9-20210208"
+  default = "CHANGE_RELEASE"
 }
 
 variable "min_node_count" {
@@ -30,12 +30,11 @@ variable "max_node_count" {
 
 variable "machine_type" {
   type    = string
-  default = "t2.medium"
+  default = "t2.small"
 }
 
 variable "destroy" {
   type    = bool
-  default = false
+  default = true
 }
-
 
